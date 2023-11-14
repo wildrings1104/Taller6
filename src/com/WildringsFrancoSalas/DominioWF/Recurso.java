@@ -13,10 +13,8 @@ abstract class Recurso {
 
     public abstract void devolver();
 
-    // Método abstracto para imprimir información específica del recurso
     public abstract void mostrarInfo();
 
-    // Método toString para mostrar la información básica del recurso
     @Override
     public String toString() {
         return "Recurso: " + nombre + ", Estado: " + (prestado ? "Prestado" : "Disponible");
